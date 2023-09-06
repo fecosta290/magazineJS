@@ -8,25 +8,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-stone-200 flex-col">
-  <section id="carrinho" class="fixed right-[-360px] top-0 bg-slate-950 h-screen w-[360px] text- z-50 ease-in-out duration-300">
+  <section id="carrinho" class="fixed right-[-360px] top-0 bg-slate-950 h-screen w-[360px] text- z-50 ease-in-out duration-300 border-l border-slate-200 p-5 flex flex-col justify-between">
     <div id="cabecalhoCarrinho" class="flex justify-between m-4 text-white">
       <p>Meu Carrinho</p>
       <button id="btnFecharCarrinho">
         <i class="fa-solid fa-circle-xmark"></i>
       </button>
     </div>
-    <section id="produtos" class="text-white">
-      <p>Camisa Larga com Bolsos</p>
-      <p>Casaco Reto com Lã</p>
-      <p>Sobretudo </p>
-    </section>
-    <p>Total</p>
+    <section id="produtos" class="text-white"></section>
+    <p id="total" class="text-white ">Total</p>
     <button class="bg-slate-200 text-slate-900 p-1">Finalizar compra</button>
   </section>
-  <header class="flex bg-slate-950 p-2 justify-between items-end sticky top-0 shadow-lg shadow-slate-700">
+  <header class="flex bg-slate-950 p-2 justify-between items-end sticky top-0 shadow-lg shadow-slate-700 z-10">
     <img src="./assets/logo/hashtag.svg" alt="logo" class="h-16">
     <div class="text-white flex gap-2 mx-2 h-10">
-      <button id="btnAbrirCarrinho"><i class="fa-solid fa-cart-plus"></i></button>
+      <button id="btnAbrirCarrinho"><i class="fa-solid fa-cart-shopping"></i></button>
       <button><i class="fa-solid fa-user"></i></button>
     </div>
   </header>
